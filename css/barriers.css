@@ -1,18 +1,18 @@
 body {
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0;
 }
 
-#container {
+.container {
     position: relative;
     border: 2px solid #ccc;
     width: 800px;
     height: 500px;
     margin: 80px auto 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-#barrier {
+/* .barrier {
     background-color: #732d2d;
     position: absolute;
     width: 300px;
@@ -20,4 +20,4 @@ body {
     border-radius: 5px;
     right: 0;
     top: -70px;
-}
+} */
