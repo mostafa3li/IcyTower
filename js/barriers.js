@@ -5,12 +5,12 @@ let barrierCanvas = document.querySelector("canvas"),
     barrier = barrierCanvas.getContext("2d"),
     // initial barrier data 
     barrierData = {
-        width : 300,
-        height : 50,
-        y : Math.floor(Math.random() * (contHeight - this.height)),
-        x : Math.floor(Math.random() * (contWidth - this.width)),
+        width: 300,
+        height: 50,
+        y: Math.floor(Math.random() * (contHeight - this.height)),
+        x: Math.floor(Math.random() * (contWidth - this.width)),
         // test function for colors
-        getRandomColor: ()=> {
+        getRandomColor: () => {
             let letters = '0123456789ABCDEF',
                 color = '#';
             for (let i = 0; i < 6; i++) {
@@ -21,24 +21,24 @@ let barrierCanvas = document.querySelector("canvas"),
     },
     // game levels 
     level = {
-        one : 1,
-        two : 3,
-        three : 5
+        one: 1,
+        two: 3,
+        three: 5
     };
 barrierCanvas.width = contWidth;
 barrierCanvas.height = contHeight;
 
-function Barrier(x, y, width, height) {  
+function Barrier(x, y, width, height) {
     this.x = x;
     this.y = y;
     this.width = width;
     this.height = height;
-    
+
     this.generateBarrier = function () {
         barrier.fillRect(this.x, this.y, this.width, this.height);
         // console.log("barier generated");
     }
-    
+
     this.moveBarriers = function () {
         this.generateBarrier();
         this.y += level.one;
@@ -55,7 +55,7 @@ let barriersArray = [];
 for (let i = 0; i < 5; i++) {
     let x = Math.floor(Math.random() * (contWidth - barrierData.width));
     let y = Math.floor(Math.random() * (contHeight - barrierData.height));
-    barriersArray.push(new Barrier(x,y,barrierData.width,barrierData.height));
+    barriersArray.push(new Barrier(x, y, barrierData.width, barrierData.height));
 }
 
 console.log(barriersArray);
@@ -65,7 +65,7 @@ function moveDown() {
     if (true) {
         requestAnimationFrame(moveDown);
     }
-    barrier.clearRect(0,0,contWidth,contHeight);
+    barrier.clearRect(0, 0, contWidth, contHeight);
 
     for (let i = 0; i < barriersArray.length; i++) {
         barriersArray[i].moveBarriers();
@@ -74,7 +74,7 @@ function moveDown() {
 moveDown();
 
 
- /*
+/*
 function generateBarrier() {
     barrier.fillRect(barrierData.x, barrierData.y, barrierData.width, barrierData.height);
 }
