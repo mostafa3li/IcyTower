@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="./windowStyle.css"> -->
+</head>
+
+<body>
+
+    <!-- game gadgets -->
+    <div class="game">
+        <aside class="game-badges">
+            <div class="badges first-badge">
+                <img src="../badges/rookie.png" width="100" height="50">
+                <img src="../badges/badge1.png" width="100" height="100">
+                <span>1000 points</span>
+            </div>
+            <div class="badges second-badge">
+                <img src="../badges/professional.png" width="150" height="50">
+                <img src="../badges/badge2.png" width="100" height="100">
+                <span>2000 points</span>
+            </div>
+            <div class="badges third-badge">
+                <img src="../badges/world class.png" width="150" height="50">
+                <img src="../badges/badge3.png" width="100" height="100">
+                <span>3000 points</span>
+            </div>
+        </aside>
+        <aside class="game-score">
+            <div>
+                <h1>SCORE</h1>
+                <span >Generate score here</span>
+            </div>
+        </aside>
+    </div>
+    <!-- ./game gadgets -->
+    
+    <!-- canvas -->
+    <canvas id="myCanvas"></canvas>
+    <!-- ./canvas -->
+    
+    <!-- modal / pop-up -->
+    <div id="overModal" class="overModal">
+        <div class="modal-content">
+            <div class="score-content">
+                <img src="./your_score.png" width="500" height="100" alt="">
+                <div id= "gameoverscore">
+                   
+                </div>
+            </div>
+            <form>
+                <input class="playerName" type="text" placeholder="Enter your name">
+                <input class="btn" type="button" value="OK">
+            </form>
+        </div>
+    </div>
+    <div id="pauseModal" class="pauseModal">
+        <div class="modal-content">
+            <span class="closeModal">
+                <img src="./x.png" alt="">
+            </span>
+            <button class="exit btn">Quit to main menu</button>
+        </div>
+    </div>
+    <!-- ./ modal / pop-up -->
+
+    <!-- <script src = "./windowScript.js"></script> -->
+	
+    <script src="./script.js"></script>
+	
+    
+</body>
+
+</html>

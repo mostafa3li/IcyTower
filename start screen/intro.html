@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+            <link href="startscreen.css" />   
+    </head>
+    <body>
+        <div> 
+            <img class='logo' src="logo.png" >
+            
+        </div>
+        <embed src="mainTrack.wav" autostart="true" width="0" height="0" id="mainTrack" 
+            enablejavascript="true" loop='true' autobuffer>
+
+        
+        <div class="options">
+            <div >
+                <a href="../characters/characters.html"><img src="new game.png" class="new_game" width="300" height="70"></a>
+            </div>
+            <div >
+                <a href="../high scores/high scores.html"><img src="high scores.png" class="high_scores" width="300" height="70"></a>
+            </div>
+            <div >
+                <a href="../badges/badges.html"><img src="badges.png" class="badges" width="200" height="70"></a>
+            </div>
+           
+        </div>
+
+        <div class="penguins">
+            <img src="penguin.gif" width=80  class="penguin">
+            <img src="penguin.gif" height="100" class="penguin">
+            <img src="penguin.gif" height="80" class="penguin">
+                  
+        </div>
+
+        <style>
+        body 
+            {       
+                    
+                    background-image: url("amr bg.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+            }
+            .logo
+            {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                height: 40%;
+            }
+           
+            .penguins
+            {
+               margin-right: 20%;
+               margin-top: 4%;
+               float: right;
+            }
+            .options
+            {
+                margin-left: 6%;
+               
+            }
+            .new_game
+            {
+                opacity: 0.5;
+            }
+            .new_game:hover
+            {
+                width: 24%;
+                opacity: 1;;
+            }
+            .high_scores
+            {
+                margin-top: 2%; 
+                opacity: 0.5
+            }
+            .high_scores:hover
+            {
+                opacity: 1;
+                width: 24%;
+            }
+            .badges
+            {
+                margin-top: 2%;
+                opacity: 0.5
+            }
+            .badges:hover
+            {
+                opacity: 1;
+                width: 17%;
+            }
+        </style>
+        <script src="../JS_GAME/score.js"></script>
+
+    </body>
+</html>

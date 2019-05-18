@@ -1,0 +1,104 @@
+<html>
+
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Inconsolata|Nunito|Nunito+Sans|Pacifico|Quicksand|Rubik|VT323" rel="stylesheet">
+</head>
+<body>
+         
+            <a href="../start screen/intro.html"> <img src="../start screen/back.png" height="13%" class="back"></a>
+            <img class='logo' src="../start screen/logo.png" >
+            <a href="../start screen/intro.html"><img src="../start screen/home.png" height="10%" class="home"></a>
+            
+            <embed src="../start screen/mainTrack.wav" autostart="true" width="0" height="0" id="mainTrack" 
+            enablejavascript="true" loop='true' autobuffer>
+        
+
+        <div class="high_score">
+            <img src="../start screen/high scores.png" id = 'highScores'>
+        </div>
+
+        <div>
+            <p id='first'></p>
+            <p id='second'></p>
+            <p id='third'></p>
+            <p id='fourth'></p>
+            <p id='fifth'></p>
+        </div>
+
+        
+
+        <div class="penguins">
+            <img src="../start screen/penguin.gif" width=80  class="penguin">
+            <img src="../start screen/penguin.gif" height="100" class="penguin">
+            <img src="../start screen/penguin.gif" height="80" class="penguin">
+                  
+        </div>
+        
+       
+        
+        <style> 
+            body 
+            {       
+                    
+                    background-image: url("../start screen/amr bg.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+            }
+            .back
+            {
+                display: inline-block;
+                float: left;
+                opacity: .5; 
+            }
+            .back:hover
+            {
+                opacity: 1;
+            }
+        
+            .logo
+            {
+                display: inline-block;
+                margin-left: 20%;
+                width: 50%;
+                height: 40%;
+            }
+            .home
+            { 
+                float: right;
+                opacity: .5;
+            }
+            .home:hover
+            {
+                opacity: 1;
+            }
+            .penguins
+            {
+               margin-right: 20%;
+               margin-top: 2%;
+               float: right;
+            }
+            #highScores
+            {
+                height: 20%;
+                margin-left: 3%;
+                margin-top: -7%;
+            }
+            p
+            {
+                font: outline;
+                font-size: 30;
+                font: bold;
+                color:white;
+                margin-left: 10%;
+                margin-top:-.3%;
+                font-family: 'Pacifico', cursive;
+                /* font-family: 'VT323', monospace;  */
+            }
+            
+            </style>
+            <script src='highScores.js'></script>
+            
+    </body>
+</html>

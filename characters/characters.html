@@ -1,0 +1,115 @@
+    <html>
+        <body>
+            
+                <a href="../start screen/intro.html"> <img src="../start screen/back.png" height="13%" class="back"></a>
+                <img  src="../start screen/logo.png" class="logo">
+                <a href="../start screen/intro.html"><img src="../start screen/home.png" height="10%" class="home">
+
+            <div class="choose_your_hero">
+                <img src="choose your hero.png" width="600">
+            </div>
+
+            <embed src="../start screen/mainTrack.wav" autostart="true" width="0" height="0" id="mainTrack" 
+            enablejavascript="true" loop='true' autobuffer>
+                <div class="character_photos"> 
+                    <a href="../JS_GAME/main.html"><img src="hero1.png"  width='12%' id="hero1"></a>
+            
+                    <a href="../JS_GAME/main.html"><img src="hero2.png"  width="12%" id="hero2"></a>
+                </div>
+
+            <div class="penguins">
+                <img src="../start screen/penguin.gif" width=80  class="penguin">
+                <img src="../start screen/penguin.gif" height="100" class="penguin">
+                <img src="../start screen/penguin.gif" height="80" class="penguin">
+            </div>
+        
+        
+            
+            <style> 
+                body 
+                {       
+                        
+                        background-image: url("../start screen/amr bg.jpg");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                }
+                .back
+                {
+                    display: inline-block;
+                    float: left;
+                    opacity: .5; 
+                }
+                .back:hover
+                {
+                    opacity: 1;
+                }
+            
+                .logo
+                {
+                    display: inline-block;
+                    margin-left: 20%;
+                    width: 50%;
+                    height: 40%;
+                }
+                .home
+                {
+                    display: inline-block; 
+                    float: right;
+                    opacity: .5;
+                }
+                .home:hover
+                {
+                    opacity: 1;
+                }
+                .penguins {
+                    
+                    margin-top: 0%;
+                    margin-left: 60%;
+                }
+                .penguin
+                {
+                    display: inline-block;
+                }
+                .character_photos
+                {
+                    margin-left: 80;
+                    margin-top: 90;
+                    display: inline-block;
+                    
+                }
+                .choose_your_hero
+                {
+                    margin-left: 40;
+                    margin-top: -30;
+                
+                }
+
+                #hero1
+                {
+                    float: left;
+                    margin-left: 10%;
+                    opacity: 0.5;
+                }
+                #hero1:hover
+                {
+                    width:13%;
+                    opacity: 1;
+                }
+                #hero2
+                {
+                    float: right;
+                    margin-right: 60%;
+                    opacity: 0.5;
+                }
+                #hero2:hover
+                {
+                    width:13%;
+                    opacity: 1;
+                }
+             </style>
+
+             <script src="./characters.js">
+            </script>
+                
+        </body>
+    </html>
